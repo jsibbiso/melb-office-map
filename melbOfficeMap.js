@@ -33,7 +33,7 @@
 			function makePlant(id, loc) {
 				var plant = paper.circle(loc[0],loc[1],10);
 				plant.node.id =id;
-				plant.attr("fill", "#88DD88");
+				plant.attr("fill", "#006400");
 				plant.attr("stroke", 0.5);
 			}
 

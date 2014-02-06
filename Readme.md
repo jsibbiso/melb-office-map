@@ -4,7 +4,7 @@
 Rooms and Plants are accessible via DOM ids so you can easily attach events to them or change their colour based on values from an external (Ie. Real world) source.
 
 ## Dependencies
-* Rapheal ~ 2.1.2 http://raphaeljs.com/
+* Raphael ~ 2.1.2 http://raphaeljs.com/
 
 ## Use
     MelbOfficeMap.render(targetDOMId,width,height);
