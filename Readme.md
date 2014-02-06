@@ -9,7 +9,13 @@ Rooms and Plants are accessible via DOM ids so you can easily attach events to t
 ## Use
     MelbOfficeMap.render(targetDOMId,width,height);
 
-    MelbOfficeMap.render("layout",600,300);
+    MelbOfficeMap.render("layout",690,310);
+
+Dimensions of 690x310 (ratio 2.23:1) match the aspect ratio for showing the 'to scale' floor plan
+
+To show the more casual sketch of the floor plan. Pass false as the final argument
+
+    MelbOfficeMap.render("layout",690,310,false);
 
 Update the colours of rooms using (if you are running JQuery):
 
