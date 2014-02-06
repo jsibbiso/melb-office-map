@@ -1,6 +1,7 @@
 (function(global) {
   var MelbOfficeMap = {
     VERSION: '0.0.1',
+    requires: ["raphael ~2.1.2 http://raphaeljs.com/"],
 
     render: function(elementId, width, height) {
 
@@ -50,16 +51,15 @@
 			makeRoom('boardRoom',[0,height*0.03,width*0.11,height*0.37]);
 			makeRoom('room1',[width*0.11,height*0.04,width*0.07,height*0.26]);
 			makeRoom('room2',[width*0.18,height*0.05,width*0.07,height*0.25]);
-			makeRoom('room3',[width*0.8,height*0.05,width*0.2,height*0.2]);
-			makeRoom('room4',[width*0.87,height*0.25,width*0.13,height*0.2]);
-			makeRoom('room5',[width*0.87,height*0.45,width*0.13,height*0.2]);
-			makeRoom('storeRoom',[width*0.9,height*0.7,width*0.07,height*0.15]);
+			makeRoom('room3',[width*0.8,height*0.05,width*0.2,height*0.33]);
+			makeRoom('room4',[width*0.85,height*0.38,width*0.15,height*0.22]);
+			makeRoom('storeRoom',[width*0.9,height*0.7,width*0.1,height*0.15]);
 			makeRoom('boardRoom2',[width*0.77,height*0.7,width*0.13,height*0.17]);
 			makeRoom('room6',[width*0.69,height*0.75,width*0.08,height*0.13]);
 			makeRoom('room7',[width*0.61,height*0.77,width*0.08,height*0.13]);
 			makeRoom('serverRoom',[width*0.56,height*0.77,width*0.05,height*0.13]);
 
-			makeWall('outerWall',[width*0.77,height*0.05,width*0.03,height*0.6]);
+			makeWall('outerWall',[width*0.77,height*0.05,width*0.03,height*0.55]);
 			makeWall('kitchedWall1',[width*0.4,height*0.3,width*0.015,height*0.35]);
 			makeWall('kitchedWall2',[width*0.53,height*0.3,width*0.015,height*0.35]);
 			makeWall('kitchedWall3',[width*0.4,height*0.635,width*0.13,height*0.015]);
@@ -78,7 +78,7 @@
   };
 
   if (global.MelbOfficeMap) {
-    throw new Error('turing has already been defined');
+    throw new Error('MelbOfficeMap has already been defined');
   } else {
     global.MelbOfficeMap = MelbOfficeMap;
   }
