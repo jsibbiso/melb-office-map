@@ -66,9 +66,9 @@
 			makeWall('kitchedWall2',[width*0.53,height*0.3,width*0.015,height*0.35]);
 			makeWall('kitchedWall3',[width*0.4,height*0.635,width*0.13,height*0.015]);
 
-			makeTable('table1',[width*0.32,height*0.06,width*0.04,height*0.5],2);
-			makeTable('table2',[width*0.58,height*0.07,width*0.04,height*0.49],-2);
-			makeTable('table3',[width*0.68,height*0.06,width*0.04,height*0.5],-2);
+			makeTable('table1',[width*0.32,height*0.06,width*0.04,height*0.6],2);
+			makeTable('table2',[width*0.58,height*0.07,width*0.04,height*0.59],-2);
+			makeTable('table3',[width*0.68,height*0.06,width*0.04,height*0.6],-2);
 			makeTable('portableTable',[width*0.43,height*0.15,width*0.08,height*0.1],0);
 			makeTable('kitchenTable',[width*0.43,height*0.4,width*0.08,height*0.1],0);
 
