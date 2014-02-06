@@ -41,25 +41,27 @@
 			var paper = Raphael(elementId, width, height);
 
 			var officeOutline = paper.path("M0 0,C0 0 "+width/2+" "+height/6+" "+width+" 0,"
-				+"L"+width+' '+(height*5/6)+","
-				+"C"+width+' '+(height*5/6)+" "+width/2+" "+height+" 0 "+(height*5/6)+","
+				+"L"+width+' '+height+","
+				+"L"+width*0.5+' '+height+","
+				+"M"+width*0.45+" "+height+","
+				+"L 0 "+height+","
 				+"L0 0");
-			var frontDoor = paper.path("M"+width*0.45+" "+height*0.91+",L"+width*0.5+" "+height*0.85);
+			var frontDoor = paper.path("M"+width*0.45+" "+height+",L"+width*0.5+" "+height*0.95);
 
-			makeRoom('phoneBooth',[width*0.38,height*0.8,width*0.03,height*0.1]);
-			makeRoom('auditorium',[0,height*0.4,width*0.25,height*0.47]);
+			makeRoom('phoneBooth',[width*0.38,height*0.89,width*0.03,height*0.11]);
+			makeRoom('auditorium',[0,height*0.4,width*0.25,height*0.6]);
 			makeRoom('boardRoom',[0,height*0.03,width*0.11,height*0.37]);
 			makeRoom('room1',[width*0.11,height*0.04,width*0.07,height*0.26]);
 			makeRoom('room2',[width*0.18,height*0.05,width*0.07,height*0.25]);
 			makeRoom('room3',[width*0.8,height*0.05,width*0.2,height*0.33]);
-			makeRoom('room4',[width*0.85,height*0.38,width*0.15,height*0.22]);
-			makeRoom('storeRoom',[width*0.9,height*0.7,width*0.1,height*0.15]);
-			makeRoom('boardRoom2',[width*0.77,height*0.7,width*0.13,height*0.17]);
-			makeRoom('room6',[width*0.69,height*0.75,width*0.08,height*0.13]);
-			makeRoom('room7',[width*0.61,height*0.77,width*0.08,height*0.13]);
-			makeRoom('serverRoom',[width*0.56,height*0.77,width*0.05,height*0.13]);
+			makeRoom('room4',[width*0.85,height*0.38,width*0.15,height*0.27]);
+			makeRoom('storeRoom',[width*0.9,height*0.79,width*0.1,height*0.21]);
+			makeRoom('boardRoom2',[width*0.77,height*0.79,width*0.13,height*0.21]);
+			makeRoom('room6',[width*0.69,height*0.84,width*0.08,height*0.16]);
+			makeRoom('room7',[width*0.61,height*0.86,width*0.08,height*0.14]);
+			makeRoom('serverRoom',[width*0.56,height*0.86,width*0.05,height*0.14]);
 
-			makeWall('outerWall',[width*0.77,height*0.05,width*0.03,height*0.55]);
+			makeWall('outerWall',[width*0.77,height*0.05,width*0.03,height*0.6]);
 			makeWall('kitchedWall1',[width*0.4,height*0.3,width*0.015,height*0.35]);
 			makeWall('kitchedWall2',[width*0.53,height*0.3,width*0.015,height*0.35]);
 			makeWall('kitchedWall3',[width*0.4,height*0.635,width*0.13,height*0.015]);
