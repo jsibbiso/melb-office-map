@@ -70,6 +70,8 @@
 				p16 = {name: 'specialHallway', path: polygonToPath("739.438,492 761.562,492 759.688,538.875 809.562,538 815.688,590.25 803.219,591.375 802.71,581 759.312,581.739 738.562,578.864 739.938,572.75 728.01,570.671 730.667,550.625 739.765,551.033 741.062,537.5 735.062,536.5")};
 				p17 = {name: 'room3', path: polygonToPath("766.594,491.086 765,532.831 809.188,532.667 816.812,531.542 810.188,490.625")};
 				p18 = {name: 'projectRoom', path: polygonToPath("809.938,485 803.562,445.75 793.438,446.875 776.562,448 759.812,447.625 749.438,447.125 744.312,446.625 739.812,486.5")};
+				doorIn = {name: 'doorIn', path: polygonToPath("500,500 480,495")};
+				doorOut = {name: 'doorOut', path: polygonToPath("500,502 480,497")};
 				
 				var natural_x_bound=690;
 				var natural_y_bound=310;
@@ -82,8 +84,8 @@
 				backing.node.id = 'backing';
 				backing.attr("fill","#eee");
 
-				[p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18].forEach(function(element, index, array) {
-					var i = paper.path(element['path']);
+				[p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,doorIn,doorOut].forEach(function(element, index, array) {
+					var i = paper.path(element['path']); //Instead of 'path', use a hash with the method name to call and args to pass in, so can do plants
 					i.node.id = element['name'];
 					var scale_center = "135,260"; //Magic center
 					var scale_factors = scale_x+","+scale_y;
