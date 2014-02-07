@@ -87,6 +87,7 @@
 				[p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,doorIn,doorOut].forEach(function(element, index, array) {
 					var i = paper.path(element['path']); //Instead of 'path', use a hash with the method name to call and args to pass in, so can do plants
 					i.node.id = element['name'];
+					i.node.setAttribute("rid",i.id);  // Rumour has it that this won't work in < IE9
 					var scale_center = "135,260"; //Magic center
 					var scale_factors = scale_x+","+scale_y;
 					i.transform("S"+scale_factors+","+scale_center+"r-45,520,520T-130,-260");
@@ -135,6 +136,7 @@
 				makePlant('plant3',[width*0.535,height*0.675]);
 				makePlant('plant4',[width*0.415,height*0.675]);
     }
+    return paper;
   }
 }
 
